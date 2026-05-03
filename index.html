@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Diagnostic</title>
+<meta charset="UTF-8">
+<title>Diagnostic Santé</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<form id="form">
-    <input id="nom" placeholder="Nom"><br><br>
-    <textarea id="symptomes" placeholder="Symptômes"></textarea><br><br>
+<h1>Diagnostic Santé</h1>
 
-    <button type="submit">Diagnostiquer</button>
+<form id="form">
+<input type="text" placeholder="Nom" required><br><br>
+<input type="email" placeholder="Email" required><br><br>
+<textarea id="symptomes" placeholder="Écrivez vos symptômes"></textarea><br><br>
+
+<button>Diagnostiquer</button>
 </form>
 
-<h2 id="resultat"></h2>
+<h3 id="resultat"></h3>
 
-<script src="controle.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
