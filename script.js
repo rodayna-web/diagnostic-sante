@@ -1,3 +1,4 @@
+fuction valide{
 document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -14,3 +15,4 @@ document.getElementById("form").addEventListener("submit", function(e) {
 
     document.getElementById("resultat").innerText = nom + " → " + resultat;
 });
+}
