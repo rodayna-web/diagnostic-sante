@@ -1,11 +1,13 @@
 document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    let symptomes = document.getElementById("symptomes").value.toLowerCase();
+    let text = document.getElementById("symptomes").value;
 
-    if (symptomes.includes("fièvre")) {
-        document.getElementById("resultat").innerText = "grippe 🤒";
-    } else {
-        document.getElementById("resultat").innerText = "consulte médecin 🩺";
+    let result = "Consultez un médecin";
+
+    if (text.includes("fièvre")) {
+        result = "Peut-être grippe";
     }
+
+    document.getElementById("resultat").innerText = result;
 });
