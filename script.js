@@ -1,13 +1,15 @@
 document.getElementById("form").addEventListener("submit", function(e) {
-    e.preventDefault();
+    e.preventDefault(); 
 
-    let text = document.getElementById("symptomes").value;
+    let symptomes = document.getElementById("symptomes").value;
 
-    let result = "Consultez un médecin";
+    let resultat = "";
 
-    if (text.includes("fièvre")) {
-        result = "Peut-être grippe";
+    if (symptomes.includes("fièvre")) {
+        resultat = "Peut-être grippe";
+    } else {
+        resultat = "Consultez un médecin";
     }
 
-    document.getElementById("resultat").innerText = result;
+    document.getElementById("resultat").innerText = resultat;
 });
