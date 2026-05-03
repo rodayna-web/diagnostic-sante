@@ -1,21 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Diagnostic Santé</title>
-    <link rel="stylesheet" href="style.css">
+<title>Diagnostic</title>
 </head>
 <body>
 
-<h1>🩺 Diagnostic Santé</h1>
-
 <form id="form">
-    <input id="nom" type="text" placeholder="Nom" required><br><br>
-    <input id="email" type="email" placeholder="Email" required><br><br>
+    <input id="nom" placeholder="Nom"><br><br>
+    <textarea id="symptomes" placeholder="Symptômes"></textarea><br><br>
 
-    <textarea id="symptomes" placeholder="Écris tes symptômes" required></textarea><br><br>
-
-    <input type="submit" value="Diagnostique">
+    <button type="submit">Diagnostiquer</button>
 </form>
 
 <h2 id="resultat"></h2>
